@@ -1,6 +1,6 @@
-import VirtualPet from './virtual-pet';
-import { careForPetEvent, createActionButton, petStats } from './utils';
-import Form from './Form';
+import VirtualPet from './models/virtual-pet';
+import { careForPetEvent, createActionButton, petStats } from './utils/utils';
+import Form from './components/Form';
 
 const createBtn = document.querySelector('.createBtn'),
   createFormBtn = document.querySelector('.createFormBtn'),
