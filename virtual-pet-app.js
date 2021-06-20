@@ -42,4 +42,22 @@ createBtn.addEventListener('click', () => {
       ' Thirst: ' +
       createdPet.thirst;
   });
+
+  //create the water button
+  const thirstBtn = document.createElement('button');
+  thirstBtn.innerText = 'Water';
+  myPetsDiv.appendChild(thirstBtn);
+
+  //water the pet
+  thirstBtn.addEventListener('click', () => {
+    createdPet.water();
+    petPara.innerText =
+      createdPet.name +
+      ' ' +
+      createdPet.description +
+      ' Hunger: ' +
+      createdPet.hunger +
+      ' Thirst: ' +
+      createdPet.thirst;
+  });
 });
